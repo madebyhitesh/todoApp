@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    background-image: linear-gradient(120deg,rgb(240, 185, 35),rgb(204, 84, 15));
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+header
+{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(238, 226, 226);
+    font-size: 1.3rem;
+}
+.inputBar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputBar input
+{
+    font-size: 1rem;
+    padding: .3rem;
+    border: none;
+    outline: none;
+}
+.inputBar button
+{
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding: .3rem;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.inputBar button:hover
+{
+    background-color: rgb(43, 221, 43);
+}
+.todo-list
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.todo
+{
+    width:50%;
+    display: flex;
+    margin: 2rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    transition: all .5s ease;
+}
+.newItem
+{
+    background-color: white;
+    flex: 1;
+    font-size: 1rem;
+    padding: .2rem;
+}
+.complete-btn,.trash-btn
+{
+    border: none;
+    background-color:rgb(204, 84, 15) ;
+    outline: none;
+    padding: .2rem;
+    cursor: pointer;
+}
+.complete-btn{
+    background-color: green;
+    
+}
+.complete-btn img,.trash-btn img
+{
+    pointer-events: none;
+}
+.complete
+{
+    text-decoration: line-through;
+    opacity: .5;
+    transition: all .5s ease;
+}
+.delete
+{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+    transition: all .4s ease;
+}
